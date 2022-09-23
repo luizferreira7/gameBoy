@@ -8,30 +8,35 @@
     <link rel="icon" href="assets/icon.png">
 </head>
 <body style="display: grid;">
-<article>
-    <h1 class="titulo">GAME BOY</h1>
+    <div class="label" style="margin: 10px">
+        <h1 class="nintendo" style="color: #F7FBF8">Nintendo</h1>
+        <h1 id="gbTitulo" class="titulo" style="color: #F7FBF8">GAME BOY</h1>
+        <h1 class="tm"><sup>&trade;</sup></h1>
+    </div>
+<article class="card">
+    
     <section>
-        <p>
-            O GameBoy é um videogame portátil produzido pela Nintendo lançado em 1989, concebido pelo lendário
+        <p style="margin-bottom: 0;">
+            O GameBoy é um videogame portátil produzido pela Nintendo e lançado em 1989, concebido pelo lendário
             criador de brinquedos japoneses Gunpei Yokoi.
         </p>
-        <div class="row">
-            <div class="column">
-                <img width="340px" height="auto" src="assets/Game-Boy-Cartuchos.jpg" alt="GameBoy"/>
-            </div>
-            <div class="column">
-                <img width="200px" height="auto" src="assets/Game-Boy-Pokemon.jpg" alt="GameBoyPokemon"/>
-            </div>
-            <div class="column">
-                <img width="355px" height="auto" src="assets/Game-Boy-Box.jpg" alt="GameBoyBox"/>
-            </div>
-        </div>
-        <p>
+        <p style="margin-top: 0;">
             Ele foi uma verdadeira revolução comparado com o antecessor, o GameWatch, que não podia trocar os jogos
             exigindo que o consumidor sempre comprasse um aparelho novo para ter novas experiências, já o GameBoy
             fazia o uso de cartuchos como mídia, permitindo que com um simples "swap" dos cartuchos novos jogos
             pudessem ser jogados, trazendo horas de diversão para seus jogadores.
         </p>
+        <div class="row">
+            <div class="column">
+                <img width="340px" height="auto" class="imgBorder" src="assets/Game-Boy-Cartuchos.jpg" alt="GameBoy"/>
+            </div>
+            <div class="column">
+                <img width="200px" class="imgBorder" height="auto" src="assets/Game-Boy-Pokemon.jpg" alt="GameBoyPokemon"/>
+            </div>
+            <div class="column">
+                <img width="355px" class="imgBorder" height="auto" src="assets/Game-Boy-Box.jpg" alt="GameBoyBox"/>
+            </div>
+        </div>
     </section>
     <section>
         <h2 class="subtitulo">MODELOS</h2>
@@ -45,7 +50,7 @@
                         pocket
                     </div>
                 </div>
-                <img width="200px" height="auto" src="assets/Game-Boy-Pocket.jpg" alt="GameBoyPocket"/>
+                <img width="200px" class="imgBorder" height="auto" src="assets/Game-Boy-Pocket.jpg" alt="GameBoyPocket"/>
                 <p>
                     Em 1996 foi lançado o "Game Boy Pocket", com acabamentos prateados metalizados,
                     30% menor que o Game Boy normal e display monocromático mais nítido.
@@ -62,7 +67,7 @@
                         LIGHT
                     </div>
                 </div>
-                <img width="240px" height="auto" src="assets/Game-Boy-Light-2.jpg" alt="GameBoyLight"/>
+                <img width="240px" class="imgBorder" height="auto" src="assets/Game-Boy-Light-2.jpg" alt="GameBoyLight"/>
                 <p>
                     Em 1997 foi lançado o Game Boy Light, alguns milímetros maior do que o Game Boy Pocket,
                     só que com uma extra - luz interna, o que lhe permitia ser jogado no escuro,
@@ -81,7 +86,7 @@
                         <span class="r">R</span>
                     </div>
                 </div>
-                <img width="200px" height="auto" src="assets/Game-Boy-Color.jpg" alt="GameBoyPocket"/>
+                <img width="200px" class="imgBorder" height="auto" src="assets/Game-Boy-Color.jpg" alt="GameBoyPocket"/>
                 <p>
                     Em 1998 foi lançado o Game Boy Color, já com um display colorido e capaz de reproduzir
                     os jogos antigos de seus antecessores. A nova tecnologia trouxe um display de LCD com
@@ -97,23 +102,24 @@
         <h2 class="subtitulo">JOGOS</h2>
         <div class="row">
             <div class="column">
-                <img width="300px" height="auto" src="assets/tetris.jpg" alt="Tetris"/>
+                <img width="300px" class="imgBorder" height="auto" src="assets/tetris.jpg" alt="Tetris"/>
                 <figcaption>Tetris</figcaption>
             </div>
             <div class="column">
-                <img width="260px" height="auto" src="assets/marioland.png" alt="MarioLand"/>
+                <img width="260px" class="imgBorder" height="auto" src="assets/marioland.png" alt="MarioLand"/>
                 <figcaption>Super Mario Land</figcaption>
             </div>
             <div class="column">
-                <img width="340px" height="auto" src="assets/pokemon.png" alt="Pokemon"/>
+                <img width="340px" class="imgBorder" height="auto" src="assets/pokemon.png" alt="Pokemon"/>
                 <figcaption>Pokemon</figcaption>
             </div>
         </div>
-        <p>
+        <p style="margin-bottom: 0;">
             O GameBoy possui uma biblioteca com centenas de jogos, alguns extremamente populares como
             Mario e Tetris (jogo que vinha com o aparelho), porém foi um titulo completamente novo que
             marcou o aparelho: Pokemon!
-            <br>
+        </p>
+        <p style="margin-top: 0;">
             A franquia Pokemon nasceu no GameBoy lançada em 1996, 7 anos após o lançamanto original do aparelho
             trouxe uma sobrevida para o mesmo, além de vender incriveis 46 milhões de cópias ao redor do mundo
             se tornando o jogo mais vendido do aparelho
@@ -322,7 +328,6 @@
     .subtitulo {
         text-align: center;
         font-weight: normal;
-        font-style: italic;
     }
 
     section {
@@ -333,6 +338,7 @@
         justify-self: center;
         text-align: justify;
         max-width: 900px;
+        text-indent: 3ch;
     }
 
     .column {
@@ -341,6 +347,18 @@
         display: grid;
         justify-items: center;
         padding: 10px;
+    }
+
+    .card {
+        justify-self: center;
+        background-color: #cadc9f;
+        border-radius: 25px;
+        min-width: 1080px;
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12) !important;
+    }
+
+    article {
+        display: grid;
     }
 
     .row:after {
@@ -359,23 +377,48 @@
         justify-self: center;
         max-width: 900px;
         border: 1px solid black;
+        background-color: #F7FBF8;
+        padding: 10px;
+        margin: 10px;
+        border-collapse: collapse;
     }
 
     th, td {
+        padding: 10px;
         border: 1px solid black;
     }
 
     body {
-        background: linear-gradient(to bottom, #CADC9F, #F7FBF8 1200px);
+        background: linear-gradient(to bottom, #306230, #F7FBF8);
     }
 
     figcaption {
         margin-top: 5px;
     }
 
+    sup {
+        vertical-align: bottom;
+        font-size: 20pt;
+    }
+
     .label {
         text-align: center;
         font-size: 20px;
+    }
+
+    .nintendo {
+        display: inline;
+        font-weight: normal;
+    }
+
+    #gbTitulo {
+        display: inline;
+        margin: 5px;
+    }
+
+    .tm {
+        display: inline;
+        color: #F7FBF8;
     }
 
     .gameboy {
@@ -434,6 +477,10 @@
 
     .r {
         color: #317aaf;
+    }
+
+    .imgBorder {
+        border-radius: 10px;
     }
 
 </style>
